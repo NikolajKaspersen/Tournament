@@ -8,7 +8,7 @@ Systemet skal i første omgang bruges af en elev (som vi kalder turneringsledere
 
 Når en turnering oprettes, skal der angives et start- og sluttidspunkt samt en beskrivelse af turneringen.
 
-Alle turneringer er knock-out * turneringer med 8 kampe:
+Alle turneringer er knock-out-turneringer (i en knockout-turnering går du kun videre, hvis du vinder din kamp) med 8 kampe:
 
 - 4 indledende kampe, hvor 8 hold skal spille mod et andet hold.
 
@@ -65,5 +65,3 @@ Et holds målscore er defineret som antallet af scorede mål minus antallet af s
 - Alle data om hold og kampe skrives til fil hver gang programmet slutter, og genindlæses når programmet starter.
 
 - Senere skal data kunne gemmes og indlæses fra en database
-
-- I en knockout-turnering går du kun videre, hvis du vinder din kamp.
