@@ -52,7 +52,7 @@ Et holds målscore er defineret som antallet af scorede mål minus antallet af s
 
 - Holdenes placering i turneringen
 
-- Et kampprogram, hvor alle planlagte kampe er listet. Men kun udfor kampe, der ER spillet, vil vise resultatet
+- Et kampprogram, hvor alle planlagte kampe er listet. Men kun for kampe, der ER blevet spillet, vil resultatet blive vist.
 
 - Hvornår den næste kamp spilles.
 
