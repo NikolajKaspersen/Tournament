@@ -1,10 +1,10 @@
-# SP3: System til at styre bordfodboldturneringer
+# SP3: System til styring af bordfodboldturneringer
 
 En skole vil gerne have et system til at styre elevernes bordfodboldturneringer.
 
 Systemet skal i første omgang bruges af en elev (som vi kalder turneringslederen), som er ansvarlig for at oprette turneringer, tage imod tilmeldinger, planlægge kampe og registrere kampresultater.
 
-# Oprette turnering
+# Opret turnering
 
 Når en turnering oprettes, skal der angives et start- og sluttidspunkt samt en beskrivelse af turneringen.
 
@@ -18,7 +18,7 @@ Alle turneringer er knock-out * turneringer med 8 kampe:
 
 Turneringslederen skal angive, hvornår alle disse kampe skal spilles, når turneringen oprettes.
 
-# Registrering af hold
+# Tilmelding af hold
 
 For at tilmelde dig turneringen skal du kontakte turneringslederen med navnet på dit hold og navnene på spillerne på holdet.
 
@@ -26,7 +26,7 @@ Der skal være minimum 2 og højst 5 spillere på et hold. Holdene bestemmer sel
 
 Når turneringslederen modtager en tilmelding, skal han kunne tilmelde holdet i systemet.
 
-# Tilføje hold til kampe
+# Tilføj hold til kampe
 
 Når der er tilmeldt 8 hold til en turnering, kan turneringslederen tilføje hold til alle de indledende kampe.
 
