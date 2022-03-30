@@ -1,6 +1,4 @@
-# SP3
-
-# System til at styre bordfodboldturneringer
+# SP3: System til at styre bordfodboldturneringer
 
 En skole vil gerne have et system til at styre de studerendes bordfodboldturneringer.
 
