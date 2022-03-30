@@ -34,7 +34,7 @@ Når de indledende kampe er spillet, skal han manuelt kunne indstille, hvilke ho
 
 Det er således turneringslederen, der bestemmer, hvilke hold der skal spille mod hinanden i de indledende kampe og i semifinalekampene, og han tilføjer også manuelt, hvilke hold der skal spille finalekampen.
 
-Det ville være smart, hvis systemet selv kunne sætte de to hold i semifinalekampene ud fra målscore (hold med den højeste målscore spiller mod hold med den laveste målscore), men det er ikke et krav, hvis kun system kan vise holdenes målscore.
+Det ville være smart, hvis systemet selv kunne sætte de to hold i semifinalekampene ud fra målscore (hold med den højeste målscore spiller mod hold med den laveste målscore), men det er ikke et krav, så længe systemet blot kan vise holdenes målscore.
 
 # Registrering af kampresultater
 
