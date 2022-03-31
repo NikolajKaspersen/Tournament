@@ -39,8 +39,9 @@ class MatchResults
 
 class FileIO
 {
-ReadData()
-SaveData()
+readResult()
+readData()
+saveData()
 }
 
 System <|-- Tournament
