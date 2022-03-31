@@ -37,11 +37,17 @@ class MatchResults
     recordMatchResults()
 }
 
+class FileIO
+{
+readData()
+SaveData()
+}
+
 System <|-- Tournament
 System <|-- Registrations
 System <|-- Matches
 System <|-- MatchResults
-
+Registrations <|-- FileIO
 Main <|-- System
 
 @enduml
