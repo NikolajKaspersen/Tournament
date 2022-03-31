@@ -1,12 +1,9 @@
 @startuml
-class Main
+class System
 {
     createTournament()
-    receiveRegistrations()
-    addTeams()
-    scheduleMatches()
-    recordMatchResults()
 }
+
 class Tournament
 {
     String tournamentDescription;
@@ -15,6 +12,7 @@ class Tournament
 
     createTournament()
 }
+
 class Registrations
 {
     String nameOfTeam;
@@ -39,9 +37,11 @@ class MatchResults
     recordMatchResults()
 }
 
-Main <|-- Tournament
-Main <|-- Registrations
-Main <|-- Matches
-Main <|-- MatchResults
+System <|-- Tournament
+System <|-- Registrations
+System <|-- Matches
+System <|-- MatchResults
+
+Main <|-- System
 
 @enduml
