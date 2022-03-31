@@ -1,0 +1,20 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+participant System as System
+participant FileIO as FileIO
+participant Registration as Registration
+participant Match as Match
+
+
+System -> FileIO : Input Data
+FileIO -> FileIO : saveData
+FileIO -> System : String nameOfPlayers
+System -> Registration : String nameOfPlayers
+Registration -> Registration : buildTeam
+Registration -> System : String nameOfTeam
+System -> Match : scheduleMatches
+Match -> System : int matchGoalScores
+
+@enduml
