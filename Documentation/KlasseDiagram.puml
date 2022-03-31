@@ -18,6 +18,17 @@ class Tournament
     +createTournament()
 }
 
+class TextUI
+{
++ ArrayList<String> getPlayerNames()
+}
+
+class Team
+{
+    +ArrayList<String> players
++ ArrayList<String> getPlayer()
+}
+
 class Registrations
 {
     -String nameOfTeam;
@@ -48,7 +59,8 @@ class FileIO
     +readData()
     +saveData()
 }
-
+System *-- TextUI: has-a
+TextUI *-- Team: has-a
 System *-- Tournament: has-a
 System *-- Registrations: has-a
 System *-- "7"Matches: has-a

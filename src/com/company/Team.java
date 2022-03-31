@@ -1,10 +1,12 @@
 package com.company;
+import java.util.ArrayList;
+
 
 public class Team
 {
-    private String[] players;
+    ArrayList<String> players = new ArrayList<>();
 
-    public String[] getPlayers() {
+    public ArrayList<String> getPlayers() {
         return players;
     }
 }
