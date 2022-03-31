@@ -39,7 +39,7 @@ class MatchResults
 
 class FileIO
 {
-readData()
+ReadData()
 SaveData()
 }
 
