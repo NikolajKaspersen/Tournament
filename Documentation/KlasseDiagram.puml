@@ -1,3 +1,47 @@
 @startuml
+class Main
+{
+    createTournament()
+    receiveRegistrations()
+    addTeams()
+    scheduleMatches()
+    recordMatchResults()
+}
+class Tournament
+{
+    String tournamentDescription;
+    int tournamentDateStart;
+    int tournamentDateEnd;
+
+    createTournament()
+}
+class Registrations
+{
+    String nameOfTeam;
+    String[] nameOfPlayers;
+
+    receiveRegistrations()
+}
+
+class Matches
+{
+    int matchGoalScores;
+
+    addTeams()
+    scheduleMatches()
+}
+
+class MatchResults
+{
+    int registerResult;
+    int tournamentGoalScore;
+
+    recordMatchResults()
+}
+
+Main <|-- Tournament
+Main <|-- Registrations
+Main <|-- Matches
+Main <|-- MatchResults
 
 @enduml
