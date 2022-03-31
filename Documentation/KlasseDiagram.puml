@@ -1,28 +1,29 @@
 @startuml
 class Main
 {
+static main(String[] args)
 }
 
 class System
 {
-    runTournament()
+    +runTournament()
 }
 
 class Tournament
 {
-    String tournamentDescription;
-    int tournamentDateStart;
-    int tournamentDateEnd;
+    -String tournamentDescription;
+    -int tournamentDateStart;
+    -int tournamentDateEnd;
 
-    createTournament()
+    +createTournament()
 }
 
 class Registrations
 {
-    String nameOfTeam;
-    String[] nameOfPlayers;
+    -String nameOfTeam;
+    -String[] nameOfPlayers;
 
-    receiveRegistrations()
+    +receiveRegistrations()
 }
 
 class Matches
