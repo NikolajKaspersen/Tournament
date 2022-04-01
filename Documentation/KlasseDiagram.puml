@@ -66,5 +66,7 @@ System *-- "7"Matches: has-a
 System *-- FileIO: has-a
 Registrations <|-- FileIO:has-a
 Main *-- System: has-a
+TextUI *-- Registration
+System *-- Match
 
 @enduml
