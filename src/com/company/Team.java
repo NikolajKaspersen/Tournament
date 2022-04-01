@@ -4,10 +4,21 @@ import java.util.ArrayList;
 
 public class Team
 {
-    ArrayList<String> players = new ArrayList<>();
+   /* ArrayList<String> players = new ArrayList<String>();
 
-    public ArrayList<String> getPlayers()
-    {
-        return players;
+    private void createPlayers(ArrayList<String> data){
+        for(String s: data)
+        {
+            players.add(s);
+        }
+        System.out.println(s);
     }
+
+    public String getPlayers()
+        {
+        return this.players.toString();
+        }
+*/
+
+
 }
