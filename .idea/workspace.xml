@@ -1,31 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="25dd8915-aaff-42bf-b991-6561f67fff5d" name="Changes" comment="Update">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Documentation/KlasseDiagram.puml" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/KlasseDiagram.puml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/FileIO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/FileIO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Match.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Match.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/TextUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/TextUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/TournamentSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/TournamentSystem.java" afterDir="false" />
+    <list default="true" id="182b01ee-657b-4a3a-a92f-7954bbddcf5a" name="Changes" comment="Added registrations class">
+      <change beforePath="$PROJECT_DIR$/src/com/company/Tournament.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Tournament.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Interface" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitSEFilterConfiguration">
@@ -40,6 +29,7 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="27BdWSbLQHAyHlPk8E5FzixM0Sc" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -63,8 +53,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="Tournament" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="Tournament" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -85,12 +91,12 @@
       <option name="project" value="LOCAL" />
       <updated>1648797649151</updated>
     </task>
-    <task id="LOCAL-00002" summary="Update">
-      <created>1648798630834</created>
+    <task id="LOCAL-00002" summary="Added registrations class">
+      <created>1648807735930</created>
       <option name="number" value="00002" />
       <option name="presentableId" value="LOCAL-00002" />
       <option name="project" value="LOCAL" />
-      <updated>1648798630834</updated>
+      <updated>1648807735931</updated>
     </task>
     <option name="localTasksCounter" value="3" />
     <servers />
@@ -108,7 +114,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="UpdateKlasse diagram" />
-    <MESSAGE value="Update" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update" />
+    <MESSAGE value="Added registrations class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added registrations class" />
   </component>
 </project>

@@ -1,5 +1,7 @@
 package com.company;
 
+import java.util.Arrays;
+
 public class Main {
 
 
@@ -11,10 +13,7 @@ public class Main {
 // TODO knap 5 skal vise result for være kamp
     public static void main(String[] args)
     {
-        //TournamentSystem.runTournament();
-        TournamentSystem tournamentSystem = new TournamentSystem();
-        tournamentSystem.runTournament();
-
+        TournamentSystem.runTournament();
     }
 
 }
