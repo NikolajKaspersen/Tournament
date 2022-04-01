@@ -1,4 +1,7 @@
 @startuml
+
+!pragma layout smetana
+
 class Main
 {
 static main(String[] args)
@@ -40,15 +43,11 @@ class Registrations
 class Matches
 {
     -int matchGoalScores;
+    - int registerResult
+    - int tournamentGoalScore;
 
     +addTeams()
     +scheduleMatches()
-}
-
-class MatchResults
-{
-    - int registerResult
-    - int tournamentGoalScore;
     +recordMatchResults()
 }
 
@@ -64,7 +63,6 @@ TextUI *-- Team: has-a
 System *-- Tournament: has-a
 System *-- Registrations: has-a
 System *-- "7"Matches: has-a
-System *-- MatchResults: has-a
 System *-- FileIO: has-a
 Registrations <|-- FileIO:has-a
 Main *-- System: has-a
