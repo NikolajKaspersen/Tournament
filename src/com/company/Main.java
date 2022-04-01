@@ -1,9 +1,9 @@
 package com.company;
 
 public class Main {
-
+    static TournamentSystem tournament;
     public static void main(String[] args)
     {
-        TournamentSystem.runTournament();
+        tournament = new TournamentSystem();
     }
 }

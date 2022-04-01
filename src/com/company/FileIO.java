@@ -7,17 +7,21 @@ import java.util.Scanner;
 
 public class FileIO
 {
-
-        ArrayList<String> inputData() {
-        File file = new File("src/data.txt");
-        ArrayList<String> data = new ArrayList<>();
-        try {
+        ArrayList<String> inputData()
+        {
+            File file = new File("src/com/company/data.txt");
+            ArrayList<String> data = new ArrayList<>();
+        try
+        {
             Scanner scan = new Scanner(file);
             String header = scan.nextLine();
             while (scan.hasNextLine()) {
-                data.add(scan.nextLine());//“Egon: 30000”
+                data.add(scan.nextLine());
             }
-        } catch (FileNotFoundException e) {
+        }
+
+        catch (FileNotFoundException e)
+        {
             data = null;
         }
         return data;

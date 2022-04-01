@@ -8,7 +8,6 @@ public class TextUI
     public ArrayList<String> getPlayerNames(String message)
     {
         ArrayList<String> data = new ArrayList<>();
-        //Vis brugeren beskeden
 
         String input;
         Scanner scan = new Scanner(java.lang.System.in);
@@ -18,8 +17,8 @@ public class TextUI
         {
             java.lang.System.out.println(message);
 
-            input = scan.nextLine(); //Programmet går i stå og venter på at brugeren taster enter
-            //MED MINDRE
+            input = scan.nextLine();
+
             if(input.equalsIgnoreCase("Q"))
             {
                 break;

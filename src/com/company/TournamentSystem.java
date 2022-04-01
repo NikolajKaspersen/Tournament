@@ -1,12 +1,31 @@
 package com.company;
 
+import java.util.ArrayList;
+
 public class TournamentSystem
 {
     private FileIO fileIO= new FileIO();
-    public void runTournament()
+
+    public TournamentSystem()
     {
-        System.out.println("Hej");
-        fileIO.inputData();
+        runTournament();
+    }
+
+
+
+    private void runTournament()
+    {
+        ArrayList<String> data;
+        data =  fileIO.inputData();
+        if(data == null){
+
+            data = TextUI.getPlayerNames("Skriv spillernavn. Tast Q for at quitte");
+        }
+        this.(data);
+        //**********************
+        // Load af felt data
+        // **********************
+        String[] fieldData = fileIO.readData();
 
     }
 

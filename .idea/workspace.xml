@@ -1,8 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="25dd8915-aaff-42bf-b991-6561f67fff5d" name="Changes" comment="UpdateKlasse diagram">
+    <list default="true" id="44415f30-a3ab-456f-a863-dfd93556b34a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tournament/com/company/FileIO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tournament/com/company/FileIO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tournament/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tournament/com/company/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tournament/com/company/TournamentSystem.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tournament/com/company/TournamentSystem.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tournament/com/company/data.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tournament/com/company/data.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/FileIO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/FileIO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/TextUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/TextUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/TournamentSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/TournamentSystem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/data.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/data.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,51 +21,27 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="MarkdownSettingsMigration">
-    <option name="stateVersion" value="1" />
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.Main" />
+      <module name="Tournament" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
   </component>
-  <component name="ProjectId" id="27BdWSbLQHAyHlPk8E5FzixM0Sc" />
-  <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showLibraryContents" value="true" />
-    <option name="showMembers" value="true" />
-  </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-  </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="25dd8915-aaff-42bf-b991-6561f67fff5d" name="Changes" comment="" />
-      <created>1648797453109</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1648797453109</updated>
-    </task>
-    <task id="LOCAL-00001" summary="UpdateKlasse diagram">
-      <created>1648797649150</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1648797649151</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="UpdateKlasse diagram" />
-    <option name="LAST_COMMIT_MESSAGE" value="UpdateKlasse diagram" />
   </component>
 </project>
