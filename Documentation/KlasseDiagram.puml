@@ -61,12 +61,9 @@ class FileIO
 System *-- TextUI: has-a
 TextUI *-- Team: has-a
 System *-- Tournament: has-a
-System *-- Registrations: has-a
-System *-- "7"Matches: has-a
 System *-- FileIO: has-a
-Registrations <|-- FileIO:has-a
 Main *-- System: has-a
 TextUI *-- Registration
-System *-- Match
+System *-- "7"Match
 
 @enduml
