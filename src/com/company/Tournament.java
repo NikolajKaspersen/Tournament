@@ -8,7 +8,7 @@ public class Tournament
     private int tournamentDateStart;
     private int tournamentDateEnd;
 
-    public static void createTournament()
+    public void createTournament()
     {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Velkommen til fodboldturnering, tast ja for at spille");
