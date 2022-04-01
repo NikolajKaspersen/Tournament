@@ -6,7 +6,8 @@ public class Team
 {
     ArrayList<String> players = new ArrayList<>();
 
-    public ArrayList<String> getPlayers() {
+    public ArrayList<String> getPlayers()
+    {
         return players;
     }
 }

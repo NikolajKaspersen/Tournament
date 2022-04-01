@@ -1,9 +1,9 @@
 package com.company;
 
-public class System {
-
-    public String runTournament()
+public class System
+{
+    public static String runTournament()
     {
-        return null;
+        return "Hej";
     }
 }

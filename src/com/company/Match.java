@@ -6,7 +6,8 @@ public class Match
     private String nameOfTeam;
     private String[] nameOfPlayer;
 
-    public Match(int matchGoalScores) {
+    public Match(int matchGoalScores)
+    {
         this.matchGoalScores = matchGoalScores;
     }
 
