@@ -17,7 +17,7 @@ public class Tournament
         if(!input.equalsIgnoreCase("ja")) {
             System.exit(0);
         }
-            //heheheheh
+            //heheheheh//
 
 
 
