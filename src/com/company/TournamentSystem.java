@@ -22,10 +22,7 @@ public class TournamentSystem
             data = TextUI.getPlayerNames("Skriv spillernavn. Tast Q for at quitte");
         }
         this.(data);
-        //**********************
-        // Load af felt data
-        // **********************
-        String[] fieldData = fileIO.readData();
+        String[] tournamentData = fileIO.readTournamentData();
 
     }
 

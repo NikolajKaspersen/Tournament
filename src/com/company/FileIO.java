@@ -32,9 +32,31 @@ public class FileIO
         return null;
     }
 
-    public String readData()
+    public String readTournamentData()
     {
-        return null;
+        File file = new File("src/com/company/tournamentData");
+        String[] data = new String[8];
+
+        try
+        {
+            Scanner scan = new Scanner(file);
+            int i = 0; //counter variabel
+
+            String header = scan.nextLine();//Ignorer header
+
+            while (scan.hasNextLine())
+            {
+                data[i] = scan.nextLine();
+                i++;
+
+            }
+        }
+        catch (FileNotFoundException e)
+        {
+
+            data = null;
+        }
+        return data;
     }
 
     public String SaveDate()

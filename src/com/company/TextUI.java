@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class TextUI
 {
-    public ArrayList<String> getPlayerNames(String message)
+    public static ArrayList<String> getPlayerNames(String message)
     {
         ArrayList<String> data = new ArrayList<>();
 

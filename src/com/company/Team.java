@@ -4,10 +4,20 @@ import java.util.ArrayList;
 
 public class Team
 {
-    ArrayList<String> players = new ArrayList<>();
+    private String teamName;
 
-    public ArrayList<String> getPlayers()
-    {
+    ArrayList<Player> players;
+
+    public Team(String name) {
+        this.teamName = name;
+        this.players = new ArrayList<Player>();
+    }
+
+    public String getName() {
+        return teamName;
+    }
+
+    public ArrayList<Player> getPlayers() {
         return players;
     }
 }
