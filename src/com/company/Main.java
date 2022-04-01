@@ -16,8 +16,8 @@ public class Main {
 
         //System.out.println();
         //TournamentSystem.runTournament();
-        TournamentSystem tournamentSystem = new TournamentSystem();
-        tournamentSystem.runTournament();
+        Tournament tournament = new Tournament();
+        tournament.createTournament();
 
     }
 }

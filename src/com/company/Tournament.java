@@ -8,6 +8,8 @@ public class Tournament
     private int tournamentDateStart;
     private int tournamentDateEnd;
 
+    private TextUI textUI = new TextUI();
+
     public void createTournament()
     {
         Scanner scanner = new Scanner(System.in);
