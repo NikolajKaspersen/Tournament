@@ -32,7 +32,7 @@ class Team
 + ArrayList<String> getPlayer()
 }
 
-class Registrations
+class Registration
 {
     -String nameOfTeam;
     -String[] nameOfPlayers;
@@ -40,7 +40,7 @@ class Registrations
     +receiveRegistrations()
 }
 
-class Matches
+class Match
 {
     -int matchGoalScores;
     - int registerResult
