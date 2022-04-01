@@ -1,41 +1,12 @@
 package com.company;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.util.ArrayList;
-import java.util.Scanner;
+public interface FileIO {
 
-public class FileIO
-{
+    String inputData();
+    String readResult();
+    String readData();
+    String SavaData();
 
-        ArrayList<String> inputData() {
-        File file = new File("src/data.txt");
-        ArrayList<String> data = new ArrayList<>();
-        try {
-            Scanner scan = new Scanner(file);
-            String header = scan.nextLine();
-            while (scan.hasNextLine()) {
-                data.add(scan.nextLine());//“Egon: 30000”
-            }
-        } catch (FileNotFoundException e) {
-            data = null;
-        }
-        return data;
-    }
 
-    public String readResult()
-    {
-        return null;
-    }
-
-    public String readData()
-    {
-        return null;
-    }
-
-    public String SaveDate()
-    {
-        return null;
-    }
 
 }

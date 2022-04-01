@@ -51,7 +51,7 @@ class Match
     +recordMatchResults()
 }
 
-class FileIO
+interface FileIO
 {
     +inputData()
     +readResult()

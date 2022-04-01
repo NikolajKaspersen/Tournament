@@ -9,6 +9,7 @@ public class Match
     public Match(int matchGoalScores)
     {
         this.matchGoalScores = matchGoalScores;
+
     }
 
     public String addTeam()
