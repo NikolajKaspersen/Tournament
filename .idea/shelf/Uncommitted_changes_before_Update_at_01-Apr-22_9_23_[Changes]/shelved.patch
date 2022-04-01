@@ -1,0 +1,19 @@
+Index: src/com/company/TournamentSystem.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.company;\r\n\r\npublic class TournamentSystem\r\n{\r\n    public static String runTournament()\r\n    {\r\n        String hej = \"Hej\";\r\n        return hej;\r\n    }\r\n\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/com/company/TournamentSystem.java b/src/com/company/TournamentSystem.java
+--- a/src/com/company/TournamentSystem.java	(revision a20da198a6e42407cb9b428ea28dda7fee69d5c3)
++++ b/src/com/company/TournamentSystem.java	(date 1648797821121)
+@@ -4,7 +4,7 @@
+ {
+     public static String runTournament()
+     {
+-        String hej = "Hej";
++        hej = "hej";
+         return hej;
+     }
+ 
