@@ -2,10 +2,9 @@ package com.company;
 
 public class TournamentSystem
 {
-    public static String runTournament()
+    public static void runTournament()
     {
-        String hej = "Hej";
-        return hej;
+        System.out.println("Hej");
     }
 
 }
