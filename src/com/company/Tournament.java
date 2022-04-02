@@ -8,7 +8,9 @@ public class Tournament
     private int tournamentDateStart;
     private int tournamentDateEnd;
 
-    public static void createTournament()
+    private TextUI textUI = new TextUI();
+
+    public void createTournament()
     {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Velkommen til fodboldturnering, tast ja for at spille");
@@ -17,6 +19,7 @@ public class Tournament
         if(!input.equalsIgnoreCase("ja")) {
             System.exit(0);
         }
+            //heheheheh//
 
 
 
