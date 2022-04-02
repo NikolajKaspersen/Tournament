@@ -3,6 +3,7 @@ package com.company;
 import javax.swing.*;
 import java.awt.*;
 import java.io.IOException;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Tournament
@@ -69,17 +70,10 @@ public class Tournament
         button10.setText("Se planlagte kampe");
         button11.setText("Se hvornår den næste kamp spilles");
         panel.add(label);
-        panel.add(button1);
-        panel.add(button2);
-        panel.add(button3);
-        panel.add(button4);
-        panel.add(button5);
-        panel.add(button6);
-        panel.add(button7);
-        panel.add(button8);
-        panel.add(button9);
-        panel.add(button10);
-        panel.add(button11);
+        for (JButton jButton : Arrays.asList(button1, button2, button3, button4, button5, button6, button7, button8, button9, button10, button11))
+        {
+            panel.add(jButton);
+        }
         frame.add(panel);
         frame.setSize(300, 400);
         frame.setLocationRelativeTo(null);
