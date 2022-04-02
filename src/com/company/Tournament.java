@@ -51,6 +51,12 @@ public class Tournament
         button7 = new JButton();
         JButton button8;
         button8 = new JButton();
+        JButton button9;
+        button9 = new JButton();
+        JButton button10;
+        button10 = new JButton();
+        JButton button11;
+        button11 = new JButton();
         button1.setText("Opret turnering");
         button2.setText("Tag imod tilmeldinger");
         button3.setText("Planlæg kampe");
@@ -59,6 +65,9 @@ public class Tournament
         button6.setText("Tilføj hold til semifinalerne");
         button7.setText("Tilføj hold til finalekampen");
         button8.setText("Alle tilmeldte hold");
+        button9.setText("Holdenes placering i turneringen");
+        button10.setText("Planlagte kampe");
+        button11.setText("Hvornår den næste kamp spilles");
         panel.add(label);
         panel.add(button1);
         panel.add(button2);
@@ -68,13 +77,16 @@ public class Tournament
         panel.add(button6);
         panel.add(button7);
         panel.add(button8);
+        panel.add(button9);
+        panel.add(button10);
+        panel.add(button11);
         frame.add(panel);
         frame.setSize(300, 400);
         frame.setLocationRelativeTo(null);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setVisible(true);
 
-        // TODO Implementer en måde at direkte instansiere og vise dialoger på med de 2 resterende knapper
+        // TODO Implementer en måde hvorpå knappen direkte instansierer og viser dialoger ved tryk af knap 1 & 2
         // TODO JOptionPane-klassen er en reel mulighed her
         // TODO ProgressMonitor-klassen kan også sætte en dialog op, der viser forløbet af en operation,
         // TODO men den giver udfordringer på input siden
@@ -109,7 +121,7 @@ public class Tournament
         String[] score;
         score = new String[]{"Hold 1", "Hold 2", "Hold 3", "Hold 4", "Hold 5", "Hold 6", "Hold 7", "Hold 8"};
         int result;
-        result = JOptionPane.showOptionDialog(null, "Tryk for at se holdets spillere + score:", "Holdscore",
+        result = JOptionPane.showOptionDialog(null, "Tryk for at se holdets spillere + score:", "Tilmeldte hold",
                 JOptionPane.OK_CANCEL_OPTION,
                 JOptionPane.QUESTION_MESSAGE,
                 null, score, score[0]);
