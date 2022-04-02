@@ -39,11 +39,15 @@ public class Tournament
         button = new JButton();
         JButton button2;
         button2 = new JButton();
+        JButton button3;
+        button3 = new JButton();
         button.setText("Se holdscore");
         button2.setText("Opret et nyt hold");
+        button3.setText("Start ny turnering");
         panel.add(label);
         panel.add(button);
         panel.add(button2);
+        panel.add(button3);
         frame.add(panel);
         frame.setSize(300, 400);
         frame.setLocationRelativeTo(null);
