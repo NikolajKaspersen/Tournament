@@ -130,5 +130,12 @@ public class Tournament
     public static void button2Pressed() throws IOException
     {
         // TODO Knappen skal kunne tage input fra brugeren og gemme den vha. bufferedwriter klassen
+        String inputString;
+        inputString = JOptionPane.showInputDialog(null, "Indtast spillernes navn på dit hold(2-5 spillere)");
+        int input;
+        input = Integer.parseInt(inputString);
+        System.out.println("Spillernavn: " + input);
+
+        JOptionPane.showMessageDialog(null, "Spiller indtastet " + input);
     }
 }
