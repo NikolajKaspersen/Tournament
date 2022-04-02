@@ -70,7 +70,8 @@ public class Tournament
         button10.setText("Se planlagte kampe");
         button11.setText("Se hvornår den næste kamp spilles");
         panel.add(label);
-        for (JButton jButton : Arrays.asList(button1, button2, button3, button4, button5, button6, button7, button8, button9, button10, button11))
+        for (JButton jButton : Arrays.asList(button1, button2, button3, button4, button5,
+                button6, button7, button8, button9, button10, button11))
         {
             panel.add(jButton);
         }
@@ -115,7 +116,8 @@ public class Tournament
         String[] score;
         score = new String[]{"Hold 1", "Hold 2", "Hold 3", "Hold 4", "Hold 5", "Hold 6", "Hold 7", "Hold 8"};
         int result;
-        result = JOptionPane.showOptionDialog(null, "Tryk for at se holdets spillere + score:", "Tilmeldte hold",
+        result = JOptionPane.showOptionDialog(null, "Tryk for at se holdets spillere + score:",
+                "Tilmeldte hold",
                 JOptionPane.OK_CANCEL_OPTION,
                 JOptionPane.QUESTION_MESSAGE,
                 null, score, score[0]);
@@ -125,7 +127,8 @@ public class Tournament
     {
         // TODO Knappen skal kunne tage input fra brugeren og gemme den vha. bufferedwriter klassen
         String inputString;
-        inputString = JOptionPane.showInputDialog(null, "Indtast spillernes navn på dit hold(2-5 spillere)");
+        inputString = JOptionPane.showInputDialog(null, "Indtast spillernes navn på dit hold" +
+                "(2-5 spillere)");
         int input;
         input = Integer.parseInt(inputString);
         System.out.println("Spillernavn: " + input);
