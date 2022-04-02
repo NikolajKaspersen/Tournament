@@ -42,36 +42,11 @@ public class Tournament
         button2 = new JButton();
         JButton button3;
         button3 = new JButton();
-        JButton button4;
-        button4 = new JButton();
-        JButton button5;
-        button5 = new JButton();
-        JButton button6;
-        button6 = new JButton();
-        JButton button7;
-        button7 = new JButton();
-        JButton button8;
-        button8 = new JButton();
-        JButton button9;
-        button9 = new JButton();
-        JButton button10;
-        button10 = new JButton();
-        JButton button11;
-        button11 = new JButton();
         button1.setText("Opret turnering");
-        button2.setText("Tag imod tilmeldinger");
-        button3.setText("Planlæg kampe");
-        button4.setText("Registrer kampresultater");
-        button5.setText("Tilføj hold til de indledende kampe");
-        button6.setText("Tilføj hold til semifinalerne");
-        button7.setText("Tilføj hold til finalekampen");
-        button8.setText("Se alle tilmeldte hold");
-        button9.setText("Se holdenes placering i turneringen");
-        button10.setText("Se planlagte kampe");
-        button11.setText("Se hvornår den næste kamp spilles");
+        button2.setText("Tilmelding af hold");
+        button3.setText("Se alle tilmeldte hold");
         panel.add(label);
-        for (JButton jButton : Arrays.asList(button1, button2, button3, button4, button5,
-                button6, button7, button8, button9, button10, button11))
+        for (JButton jButton : Arrays.asList(button1, button2, button3))
         {
             panel.add(jButton);
         }
@@ -86,11 +61,11 @@ public class Tournament
         // TODO ProgressMonitor-klassen kan også sætte en dialog op, der viser forløbet af en operation,
         // TODO men den giver udfordringer på input siden
 
-        button8.addActionListener(e ->
+        button3.addActionListener(e ->
         {
             try
             {
-                button8Pressed();
+                button3Pressed();
             }
             catch (IOException ex)
             {
@@ -111,7 +86,7 @@ public class Tournament
         });
     }
 
-    public static void button8Pressed() throws IOException
+    public static void button3Pressed() throws IOException
     {
         String[] score;
         score = new String[]{"Hold 1", "Hold 2", "Hold 3", "Hold 4", "Hold 5", "Hold 6", "Hold 7", "Hold 8"};
