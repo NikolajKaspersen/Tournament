@@ -39,7 +39,7 @@ public class Tournament
         button = new JButton();
         JButton button2;
         button2 = new JButton();
-        button.setText("Start ny turnering");
+        button.setText("Se holdscore");
         button2.setText("Opret nyt hold");
         panel.add(label);
         panel.add(button);
@@ -63,8 +63,14 @@ public class Tournament
         });
     }
 
+
     public static void button1Pressed() throws IOException
     {
-
+        String[] score = {"Hold 1", "Hold 2", "Hold 3", "Hold 4", "Hold 5", "Hold 6", "Hold 7", "Hold 8"};
+        int result = JOptionPane.showOptionDialog(null,
+                "Se holdscore på:", "Holdscore",
+                JOptionPane.OK_CANCEL_OPTION,
+                JOptionPane.QUESTION_MESSAGE,
+                null, score, score[0]);
     }
 }
