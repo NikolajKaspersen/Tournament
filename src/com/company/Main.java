@@ -1,5 +1,7 @@
 package com.company;
 
+import java.io.IOException;
+
 public class Main {
 
 
@@ -9,15 +11,15 @@ public class Main {
 // TODO knap 3 skal registre match result
 // TODO knap 4 skal lave et nyt Tournament
 // TODO knap 5 skal vise result for være kamp
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) throws IOException {
 
         //TournamentSystem.runTournament();
 
         //System.out.println();
         //TournamentSystem.runTournament();
-        Tournament tournament = new Tournament();
-        tournament.createTournament();
+        //Tournament tournament = new Tournament();
+        Tournament.tournamentFrame();
+        Tournament.createTournament();
 
     }
 }
