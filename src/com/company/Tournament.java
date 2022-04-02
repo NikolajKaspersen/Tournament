@@ -35,17 +35,17 @@ public class Tournament
         panel.setLayout(new FlowLayout());
         JLabel label;
         label = new JLabel("Velkommen til bordfodboldsystemet");
-        JButton button;
-        button = new JButton();
+        JButton button1;
+        button1 = new JButton();
         JButton button2;
         button2 = new JButton();
         JButton button3;
         button3 = new JButton();
-        button.setText("Se holdscore");
+        button1.setText("Se holdscore");
         button2.setText("Opret et nyt hold");
         button3.setText("Start ny turnering");
         panel.add(label);
-        panel.add(button);
+        panel.add(button1);
         panel.add(button2);
         panel.add(button3);
         frame.add(panel);
@@ -54,12 +54,12 @@ public class Tournament
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setVisible(true);
 
-        // TODO Implementer en måde at direkte instansiere og vise dialoger på med knap 2 og 3.
-        // TODO Jeg bliver nok nødt til at bruge JOptionPane-klassen
-        // TODO ProgressMonitor-klassen kan sætte en dialog op, der viser forløbet af en operation,
-        // TODO men har ikke haft held med, at den virker endnu
+        // TODO Implementer en måde at direkte instansiere og vise dialoger på med de 2 resterende knapper
+        // TODO JOptionPane-klassen er en reel mulighed her
+        // TODO ProgressMonitor-klassen kan også sætte en dialog op, der viser forløbet af en operation,
+        // TODO men den giver udfordringer på input siden
 
-        button.addActionListener(e ->
+        button1.addActionListener(e ->
         {
             try
             {
@@ -70,16 +70,34 @@ public class Tournament
                 ex.printStackTrace();
             }
         });
-    }
 
+        button2.addActionListener(e ->
+        {
+            try
+            {
+                button2Pressed();
+            }
+            catch (IOException ex)
+            {
+                ex.printStackTrace();
+            }
+        });
+    }
 
     public static void button1Pressed() throws IOException
     {
-        String[] score = {"Hold 1", "Hold 2", "Hold 3", "Hold 4", "Hold 5", "Hold 6", "Hold 7", "Hold 8"};
-        int result = JOptionPane.showOptionDialog(null,
+        String[] score;
+        score = new String[]{"Hold 1", "Hold 2", "Hold 3", "Hold 4", "Hold 5", "Hold 6", "Hold 7", "Hold 8"};
+        int result;
+        result = JOptionPane.showOptionDialog(null,
                 "Se holdscore på:", "Holdscore",
                 JOptionPane.OK_CANCEL_OPTION,
                 JOptionPane.QUESTION_MESSAGE,
                 null, score, score[0]);
+    }
+
+    public static void button2Pressed() throws IOException
+    {
+        // TODO Knappen skal kunne tage input fra brugeren og gemme den vha. bufferedwriter klassen
     }
 }
