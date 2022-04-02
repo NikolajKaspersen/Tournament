@@ -54,6 +54,11 @@ public class Tournament
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setVisible(true);
 
+        // TODO Implementer en måde at direkte instansiere og vise dialoger på med knap 2 og 3.
+        // TODO Jeg bliver nok nødt til at bruge JOptionPane-klassen
+        // TODO ProgressMonitor-klassen kan sætte en dialog op, der viser forløbet af en operation,
+        // TODO men har ikke haft held med, at den virker endnu
+
         button.addActionListener(e ->
         {
             try
