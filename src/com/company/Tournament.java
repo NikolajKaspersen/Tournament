@@ -40,7 +40,7 @@ public class Tournament
         JButton button2;
         button2 = new JButton();
         button.setText("Se holdscore");
-        button2.setText("Opret nyt hold");
+        button2.setText("Opret et nyt hold");
         panel.add(label);
         panel.add(button);
         panel.add(button2);
