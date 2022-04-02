@@ -64,10 +64,10 @@ public class Tournament
         button5.setText("Tilføj hold til de indledende kampe");
         button6.setText("Tilføj hold til semifinalerne");
         button7.setText("Tilføj hold til finalekampen");
-        button8.setText("Alle tilmeldte hold");
-        button9.setText("Holdenes placering i turneringen");
-        button10.setText("Planlagte kampe");
-        button11.setText("Hvornår den næste kamp spilles");
+        button8.setText("Se alle tilmeldte hold");
+        button9.setText("Se holdenes placering i turneringen");
+        button10.setText("Se planlagte kampe");
+        button11.setText("Se hvornår den næste kamp spilles");
         panel.add(label);
         panel.add(button1);
         panel.add(button2);
