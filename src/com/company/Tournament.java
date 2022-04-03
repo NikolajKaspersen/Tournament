@@ -44,11 +44,14 @@ public class Tournament
         button2 = new JButton();
         JButton button3;
         button3 = new JButton();
+        JButton button4;
+        button4 = new JButton();
         button1.setText("Opret turnering");
         button2.setText("Tilmelding af hold");
         button3.setText("Se alle tilmeldte hold");
+        button4.setText("Registrer kampresultater");
         panel.add(label);
-        for (JButton jButton : Arrays.asList(button1, button2, button3))
+        for (JButton jButton : Arrays.asList(button1, button2, button3, button4))
         {
             panel.add(jButton);
         }
@@ -92,6 +95,18 @@ public class Tournament
             try
             {
                 button3Pressed();
+            }
+            catch (IOException ex)
+            {
+                ex.printStackTrace();
+            }
+        });
+
+        button4.addActionListener(e ->
+        {
+            try
+            {
+                button4Pressed();
             }
             catch (IOException ex)
             {
@@ -145,5 +160,12 @@ public class Tournament
             out.write(name +"\n");
             out.close();
         }
+    }
+
+    public static void button4Pressed() throws IOException
+    {
+        // TODO Registrering af kampresultater
+        JOptionPane.showMessageDialog(null, "Her skal turneringslederen " +
+                "have mulighed for at registrere kampresultater", "", 1);
     }
 }
