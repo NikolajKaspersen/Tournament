@@ -2,7 +2,9 @@ package com.company;
 
 import javax.swing.*;
 import java.awt.*;
+import java.io.FileWriter;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
 
@@ -11,6 +13,7 @@ public class Tournament
     private String tournamentDescription;
     private int tournamentDateStart;
     private int tournamentDateEnd;
+    static ArrayList<String> name;
 
     public static void createTournament() throws IOException
     {
@@ -102,14 +105,21 @@ public class Tournament
     {
         // TODO Knappen skal kunne tage input fra brugeren og gemme den vha. bufferedwriter klassen
         // TODO Problem med parseInt som skal løses (FIXET)
-
-        String inputString;
-        inputString = JOptionPane.showInputDialog(null, "Indtast spillernes navn på dit hold" +
-                "(2-5 spillere)");
-        String input;
-        input = (inputString);
-        System.out.println("Spillernavn: " + input);
-
-        JOptionPane.showMessageDialog(null, "Spiller indtastet " + input);
+        // TODO
+        while (true)
+        {
+            FileWriter out;
+            out = new FileWriter("src/com/company/data.txt", true);
+            String inputString;
+            inputString = JOptionPane.showInputDialog(null, "Indtast spillernes navn på dit hold" +
+                    "(2-5 spillere)");
+            String input;
+            input = (inputString);
+            System.out.println("Spillernavn: " + input);
+            JOptionPane.showMessageDialog(null, "Spiller indtastet: " + input);
+            System.out.print(name);
+            out.write(name +"\n");
+            out.close();
+        }
     }
 }
