@@ -1,0 +1,64 @@
+Index: src/com/company/data.txt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>Aleks\r\nPelle\r\nChris\r\nNick
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/com/company/data.txt b/src/com/company/data.txt
+--- a/src/com/company/data.txt	
++++ b/src/com/company/data.txt	
+@@ -1,4 +1,0 @@
+-Aleks
+-Pelle
+-Chris
+-Nick
+\ No newline at end of file
+Index: src/com/company/Tournament.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.company;\r\n\r\npublic class Tournament\r\n{\r\n    private String tournamentDescription;\r\n    private int tournamentDateStart;\r\n    private int tournamentDateEnd;\r\n\r\n    public void createTournament()\r\n    {\r\n\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/com/company/Tournament.java b/src/com/company/Tournament.java
+--- a/src/com/company/Tournament.java	
++++ b/src/com/company/Tournament.java	
+@@ -2,12 +2,33 @@
+ 
+ public class Tournament
+ {
+-    private String tournamentDescription;
+-    private int tournamentDateStart;
+-    private int tournamentDateEnd;
++    Team[] teams = new Team[8];
++    String[] data;
++
++    //private String tournamentDescription;
++    //private int tournamentDateStart;
++    //private int tournamentDateEnd;
++
++
++    public Tournament(String[] data)
++    {
++        this.data = data;
++        createTeams(data);
++    }
+ 
+-    public void createTournament()
++    public void createTeams(String[] data)
+     {
++        for(int i = 0; i < data.length; i++) {
++            String[] tmpData = data[i].split(",");
++            int position = Integer.parseInt(tmpData[0]);
++            String member1 = (tmpData[1]);
++            String member2 = (tmpData[2]);
++            String member3 = (tmpData[3]);
++            String member4 = (tmpData[4]);
++            String member5 = (tmpData[5]);
+ 
++            Team team = null;
++            teams[i] = team;
++        }
+     }
+ }

@@ -1,0 +1,223 @@
+Index: src/com/company/TournamentSystem.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.company;\r\n\r\nimport java.util.ArrayList;\r\n\r\npublic class TournamentSystem\r\n{\r\n    private FileIO fileIO= new FileIO();\r\n\r\n    public TournamentSystem()\r\n    {\r\n        runTournament();\r\n    }\r\n\r\n\r\n\r\n    private void runTournament()\r\n    {\r\n        ArrayList<String> data;\r\n        data =  fileIO.inputData();\r\n        if(data == null){\r\n\r\n            data = TextUI.getPlayerNames(\"Skriv spillernavn. Tast Q for at quitte\");\r\n        }\r\n        this.(data);\r\n        String[] tournamentData = fileIO.readTournamentData();\r\n\r\n    }\r\n\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/com/company/TournamentSystem.java b/src/com/company/TournamentSystem.java
+--- a/src/com/company/TournamentSystem.java	
++++ b/src/com/company/TournamentSystem.java	
+@@ -4,7 +4,9 @@
+ 
+ public class TournamentSystem
+ {
++    public ArrayList<Player> players = new ArrayList<>();
+     private FileIO fileIO= new FileIO();
++    Tournament tournament;
+ 
+     public TournamentSystem()
+     {
+@@ -12,7 +14,6 @@
+     }
+ 
+ 
+-
+     private void runTournament()
+     {
+         ArrayList<String> data;
+@@ -21,9 +22,20 @@
+ 
+             data = TextUI.getPlayerNames("Skriv spillernavn. Tast Q for at quitte");
+         }
+-        this.(data);
++        this.createPlayers(data);
+         String[] tournamentData = fileIO.readTournamentData();
++        tournament = new Tournament(tournamentData);
++    }
++
++    private void createPlayers(ArrayList<String> data) {
++
++        for (String s : data) {
++            String[] values = s.split(", ");
++
++            Player p = new Player(values[0]); // brug de to værdier til at lave en ny Player instans
++
++            players.add(p);                            // tilføj Player instansen til array'et af spillere
+ 
++        }
+     }
+-
+ }
+\ No newline at end of file
+Index: src/com/company/FileIO.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.company;\r\n\r\nimport java.io.File;\r\nimport java.io.FileNotFoundException;\r\nimport java.util.ArrayList;\r\nimport java.util.Scanner;\r\n\r\npublic class FileIO\r\n{\r\n        ArrayList<String> inputData()\r\n        {\r\n            File file = new File(\"src/com/company/data.txt\");\r\n            ArrayList<String> data = new ArrayList<>();\r\n        try\r\n        {\r\n            Scanner scan = new Scanner(file);\r\n            String header = scan.nextLine();\r\n            while (scan.hasNextLine()) {\r\n                data.add(scan.nextLine());\r\n            }\r\n        }\r\n\r\n        catch (FileNotFoundException e)\r\n        {\r\n            data = null;\r\n        }\r\n        return data;\r\n    }\r\n\r\n    public String readResult()\r\n    {\r\n        return null;\r\n    }\r\n\r\n    public String readTournamentData()\r\n    {\r\n        File file = new File(\"src/com/company/tournamentData\");\r\n        String[] data = new String[8];\r\n\r\n        try\r\n        {\r\n            Scanner scan = new Scanner(file);\r\n            int i = 0; //counter variabel\r\n\r\n            String header = scan.nextLine();//Ignorer header\r\n\r\n            while (scan.hasNextLine())\r\n            {\r\n                data[i] = scan.nextLine();\r\n                i++;\r\n\r\n            }\r\n        }\r\n        catch (FileNotFoundException e)\r\n        {\r\n\r\n            data = null;\r\n        }\r\n        return data;\r\n    }\r\n\r\n    public String SaveDate()\r\n    {\r\n        return null;\r\n    }\r\n\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/com/company/FileIO.java b/src/com/company/FileIO.java
+--- a/src/com/company/FileIO.java	
++++ b/src/com/company/FileIO.java	
+@@ -2,6 +2,8 @@
+ 
+ import java.io.File;
+ import java.io.FileNotFoundException;
++import java.io.FileWriter;
++import java.io.IOException;
+ import java.util.ArrayList;
+ import java.util.Scanner;
+ 
+@@ -32,7 +34,7 @@
+         return null;
+     }
+ 
+-    public String readTournamentData()
++    public String[] readTournamentData()
+     {
+         File file = new File("src/com/company/tournamentData");
+         String[] data = new String[8];
+@@ -40,9 +42,9 @@
+         try
+         {
+             Scanner scan = new Scanner(file);
+-            int i = 0; //counter variabel
++            int i = 0;
+ 
+-            String header = scan.nextLine();//Ignorer header
++            String header = scan.nextLine();
+ 
+             while (scan.hasNextLine())
+             {
+@@ -64,4 +66,24 @@
+         return null;
+     }
+ 
++    public void saveTournamentData(ArrayList<Player> players)
++    {
++        String data = "Team number and Team members \n";
++        for(Player p: players)
++        {
++            data += p.getTeamNumber() + ", " + p.getName()+ "\n";
++        }
++
++        try
++        {
++            FileWriter output = new FileWriter("src/com/company/tournamentData.txt");
++            output.write(data);
++            output.close();
++        }
++        catch (IOException e)
++        {
++            e.printStackTrace();
++        }
++    }
++
+ }
+Index: src/com/company/Team.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.company;\r\nimport java.util.ArrayList;\r\n\r\n\r\npublic class Team\r\n{\r\n    private String teamName;\r\n\r\n    ArrayList<Player> players;\r\n\r\n    public Team(String name) {\r\n        this.teamName = name;\r\n        this.players = new ArrayList<Player>();\r\n    }\r\n\r\n    public String getName() {\r\n        return teamName;\r\n    }\r\n\r\n    public ArrayList<Player> getPlayers() {\r\n        return players;\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/com/company/Team.java b/src/com/company/Team.java
+--- a/src/com/company/Team.java	
++++ b/src/com/company/Team.java	
+@@ -2,21 +2,39 @@
+ import java.util.ArrayList;
+ 
+ 
+-public class Team
++abstract public class Team
+ {
+-    private String teamName;
++    protected int tournamentPosition;
++    //protected String teamName;
++    protected String teamMember1;
++    protected String teamMember2;
++    protected String teamMember3;
++    protected String teamMember4;
++    protected String teamMember5;
+ 
+     ArrayList<Player> players;
+ 
+-    public Team(String name) {
+-        this.teamName = name;
+-        this.players = new ArrayList<Player>();
++    public Team(int position,
++                String name,
++                String member1,
++                String member2,
++                String member3,
++                String member4,
++                String member5)
++    {
++        this.tournamentPosition = position;
++        //this.teamName = name;
++        this.teamMember1 = member1;
++        this.teamMember2 = member2;
++        this.teamMember3 = member3;
++        this.teamMember4 = member4;
++        this.teamMember5 = member5;
+     }
+-
++    /*
+     public String getName() {
+         return teamName;
+     }
+-
++    */
+     public ArrayList<Player> getPlayers() {
+         return players;
+     }
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"44415f30-a3ab-456f-a863-dfd93556b34a\" name=\"Changes\" comment=\"\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/com/company/FileIO.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/com/company/FileIO.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/com/company/Team.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/com/company/Team.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/com/company/TextUI.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/com/company/TextUI.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/com/company/TournamentSystem.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/com/company/TournamentSystem.java\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Class\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\r\n      <map>\r\n        <entry key=\"$PROJECT_DIR$\" value=\"master\" />\r\n      </map>\r\n    </option>\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"RunManager\">\r\n    <configuration name=\"Main\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"com.company.Main\" />\r\n      <module name=\"Tournament\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"com.company.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <recent_temporary>\r\n      <list>\r\n        <item itemvalue=\"Application.Main\" />\r\n        <item itemvalue=\"Application.Main\" />\r\n        <item itemvalue=\"Application.Main\" />\r\n        <item itemvalue=\"Application.Main\" />\r\n        <item itemvalue=\"Application.Main\" />\r\n      </list>\r\n    </recent_temporary>\r\n  </component>\r\n  <component name=\"TaskManager\">\r\n    <task id=\"LOCAL-00001\" summary=\"Adding File Team/Player Read\">\r\n      <created>1648800826304</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1648800826304</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"2\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"Adding File Team/Player Read\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Adding File Team/Player Read\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	
++++ b/.idea/workspace.xml	
+@@ -3,9 +3,14 @@
+   <component name="ChangeListManager">
+     <list default="true" id="44415f30-a3ab-456f-a863-dfd93556b34a" name="Changes" comment="">
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/out/production/Tournament/com/company/FileIO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tournament/com/company/FileIO.class" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/out/production/Tournament/com/company/Team.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tournament/com/company/Team.class" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/out/production/Tournament/com/company/TextUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tournament/com/company/TextUI.class" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/out/production/Tournament/com/company/Tournament.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tournament/com/company/Tournament.class" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/out/production/Tournament/com/company/TournamentSystem.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tournament/com/company/TournamentSystem.class" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/src/com/company/FileIO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/FileIO.java" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/src/com/company/Team.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Team.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/com/company/TextUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/TextUI.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/com/company/Tournament.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Tournament.java" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/src/com/company/TournamentSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/TournamentSystem.java" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+@@ -60,11 +65,19 @@
+       <option name="project" value="LOCAL" />
+       <updated>1648800826304</updated>
+     </task>
+-    <option name="localTasksCounter" value="2" />
++    <task id="LOCAL-00002" summary="Adding File Team/Player class">
++      <created>1648803085955</created>
++      <option name="number" value="00002" />
++      <option name="presentableId" value="LOCAL-00002" />
++      <option name="project" value="LOCAL" />
++      <updated>1648803085955</updated>
++    </task>
++    <option name="localTasksCounter" value="3" />
+     <servers />
+   </component>
+   <component name="VcsManagerConfiguration">
+     <MESSAGE value="Adding File Team/Player Read" />
+-    <option name="LAST_COMMIT_MESSAGE" value="Adding File Team/Player Read" />
++    <MESSAGE value="Adding File Team/Player class" />
++    <option name="LAST_COMMIT_MESSAGE" value="Adding File Team/Player class" />
+   </component>
+ </project>
+\ No newline at end of file

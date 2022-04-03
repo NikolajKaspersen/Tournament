@@ -1,0 +1,29 @@
+<changelist name="Uncommitted_changes_before_Checkout_at_01-Apr-22_12_15_[Changes]1" date="1648808188646" recycled="true" deleted="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_01-Apr-22_12_15_[Changes]1/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Checkout at 01-Apr-22 12:15 [Changes]" />
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/Tournament/com/company/TournamentSystem.class" />
+    <option name="AFTER_PATH" value="out/production/Tournament/com/company/TournamentSystem.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_01-Apr-22_12_15_[Changes]1/TournamentSystem.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/Tournament/com/company/Tournament.class" />
+    <option name="AFTER_PATH" value="out/production/Tournament/com/company/Tournament.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_01-Apr-22_12_15_[Changes]1/Tournament.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/Tournament/com/company/FileIO.class" />
+    <option name="AFTER_PATH" value="out/production/Tournament/com/company/FileIO.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_01-Apr-22_12_15_[Changes]1/FileIO.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/Tournament/com/company/Team.class" />
+    <option name="AFTER_PATH" value="out/production/Tournament/com/company/Team.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_01-Apr-22_12_15_[Changes]1/Team.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/Tournament/com/company/TextUI.class" />
+    <option name="AFTER_PATH" value="out/production/Tournament/com/company/TextUI.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_01-Apr-22_12_15_[Changes]1/TextUI.class" />
+  </binary>
+</changelist>
