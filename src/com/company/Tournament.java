@@ -63,11 +63,11 @@ public class Tournament
         // TODO ProgressMonitor-klassen kan også sætte en dialog op, der viser forløbet af en operation,
         // TODO men den giver udfordringer på input siden
 
-        button3.addActionListener(e ->
+        button1.addActionListener(e ->
         {
             try
             {
-                button3Pressed();
+                button1Pressed();
             }
             catch (IOException ex)
             {
@@ -86,6 +86,26 @@ public class Tournament
                 ex.printStackTrace();
             }
         });
+
+        button3.addActionListener(e ->
+        {
+            try
+            {
+                button3Pressed();
+            }
+            catch (IOException ex)
+            {
+                ex.printStackTrace();
+            }
+        });
+
+    }
+
+    public static void button1Pressed() throws IOException
+    {
+        // TODO Oprettelse af ny turnering
+        JOptionPane.showMessageDialog(null, "Her skal turneringslederen " +
+                "have mulighed for at oprette en ny turnering", "", 1);
     }
 
     public static void button3Pressed() throws IOException
@@ -99,7 +119,8 @@ public class Tournament
                 JOptionPane.OK_CANCEL_OPTION,
                 JOptionPane.QUESTION_MESSAGE,
                 null, score, score[0]);
-            JOptionPane.showMessageDialog(null, "Her bør holdets spillere fra data.txt filen vises", "", 1);
+            JOptionPane.showMessageDialog(null, "Her bør holdets spillere fra " +
+                    "data.txt filen vises", "", 1);
         }
 
 
@@ -113,7 +134,8 @@ public class Tournament
             FileWriter out;
             out = new FileWriter("src/com/company/data.txt", true);
             String inputString;
-            inputString = JOptionPane.showInputDialog(null, "Indtast spillernes navn på dit hold" +
+            inputString = JOptionPane.showInputDialog(null, "Indtast spillernes" +
+                    "navn på dit hold" +
                     "(2-5 spillere)");
             String input;
             input = (inputString);
