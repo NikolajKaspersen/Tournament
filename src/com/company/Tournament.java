@@ -68,14 +68,8 @@ public class Tournament
 
         button1.addActionListener(e ->
                 {
-                    try
-                    {
-                        button1Pressed();
-                    }
-                    catch (IOException ex)
-                    {
-                        ex.printStackTrace();
-                    }
+                    JOptionPane.showMessageDialog(null, "Her skal turneringslederen " +
+                            "have mulighed for at oprette en ny turnering", "", 1);
                 }
         );
 
@@ -107,14 +101,8 @@ public class Tournament
 
         button4.addActionListener(e ->
                 {
-                    try
-                    {
-                        button4Pressed();
-                    }
-                    catch (IOException ex)
-                    {
-                        ex.printStackTrace();
-                    }
+                    JOptionPane.showMessageDialog(null, "Her skal turneringslederen " +
+                            "have mulighed for at registrere kampresultater", "", 1);
                 }
         );
     }
@@ -122,8 +110,6 @@ public class Tournament
     public static void button1Pressed() throws IOException
     {
         // TODO Oprettelse af ny turnering
-        JOptionPane.showMessageDialog(null, "Her skal turneringslederen " +
-                "have mulighed for at oprette en ny turnering", "", 1);
     }
 
 
@@ -168,7 +154,5 @@ public class Tournament
     public static void button4Pressed() throws IOException
     {
         // TODO Registrering af kampresultater
-        JOptionPane.showMessageDialog(null, "Her skal turneringslederen " +
-                "have mulighed for at registrere kampresultater", "", 1);
     }
 }
