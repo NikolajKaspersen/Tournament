@@ -2,8 +2,7 @@ package com.company;
 
 import javax.swing.*;
 import java.awt.*;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
@@ -91,15 +90,18 @@ public class Tournament
 
     public static void button3Pressed() throws IOException
     {
+        // TODO Når der trykkes på et hold, skal spillernavnene komme op
         String[] score;
         score = new String[]{"Hold 1", "Hold 2", "Hold 3", "Hold 4", "Hold 5", "Hold 6", "Hold 7", "Hold 8"};
-        int result;
-        result = JOptionPane.showOptionDialog(null, "Tryk for at se holdets spillere + score:",
+        int result1;
+        result1 = JOptionPane.showOptionDialog(null, "Tryk for at se holdets spillere + score:",
                 "Tilmeldte hold",
                 JOptionPane.OK_CANCEL_OPTION,
                 JOptionPane.QUESTION_MESSAGE,
                 null, score, score[0]);
-    }
+            JOptionPane.showMessageDialog(null, "Her bør holdets spillere fra data.txt filen vises", "", 1);
+        }
+
 
     public static void button2Pressed() throws IOException
     {
