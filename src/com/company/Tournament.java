@@ -103,9 +103,9 @@ public class Tournament
 
     public static void button2Pressed() throws IOException
     {
-        // TODO Knappen skal kunne tage input fra brugeren og gemme den vha. bufferedwriter klassen
+        // TODO Knappen skal kunne tage input fra brugeren og gemme den vha. filewriter klassen
         // TODO Problem med parseInt som skal løses (FIXET)
-        // TODO
+        // TODO input skal oplagres i lokal tekst fil som en arraylist
         while (true)
         {
             FileWriter out;
