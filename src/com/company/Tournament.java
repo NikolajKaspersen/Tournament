@@ -8,6 +8,10 @@ public class Tournament
     private int tournamentDateStart;
     private int tournamentDateEnd;
 
+    private Match[4] initialMatches;
+    private Match[2] semiFinal
+    private Match Final
+
     private TextUI textUI = new TextUI();
 
     public void createTournament()

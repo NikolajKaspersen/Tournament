@@ -1,0 +1,19 @@
+Index: src/com/company/TournamentSystem.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.company;\r\n\r\npublic class TournamentSystem\r\n{\r\n    public static void runTournament()\r\n    {\r\n        System.out.println(\"Hej\");\r\n    }\r\n\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/com/company/TournamentSystem.java b/src/com/company/TournamentSystem.java
+--- a/src/com/company/TournamentSystem.java	(revision bb445170018dec36bd742827af8894b21dc02328)
++++ b/src/com/company/TournamentSystem.java	(date 1648797908693)
+@@ -5,6 +5,7 @@
+     public static void runTournament()
+     {
+         System.out.println("Hej");
++
+     }
+ 
+ }
+\ No newline at end of file

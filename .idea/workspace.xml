@@ -1,8 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="182b01ee-657b-4a3a-a92f-7954bbddcf5a" name="Changes" comment="Added registrations class">
+    <list default="true" id="ea73e68a-056f-4902-ac2f-29e619560ff3" name="Changes" comment="Added registrations class">
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_01-Apr-22_9_03_[Changes]/shelved.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_01-Apr-22_9_03__Changes_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_01-Apr-22_9_23_[Changes]/shelved.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_01-Apr-22_9_23__Changes_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_01-Apr-22_9_37_[Changes]/shelved.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_01-Apr-22_9_37__Changes_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_31-Mar-22_11_27_[Changes]/shelved.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_31-Mar-22_11_27__Changes_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_31-Mar-22_11_43_[Changes]/shelved.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_31-Mar-22_11_43__Changes_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Tournament/com/company/FileIO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Tournament/com/company/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Tournament/com/company/Match.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Tournament/com/company/Registration.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Tournament/com/company/Team.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Tournament/com/company/TextUI.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Tournament/com/company/TournamentSystem.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Tournament/com/company/data.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Match.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Match.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Team.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Team.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/TextUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/TextUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/Tournament.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Tournament.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/TournamentSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/TournamentSystem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/data.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/data.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,19 +78,6 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="Tournament" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="Tournament" />
-      <option name="filePath" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
