@@ -18,11 +18,11 @@ public class Tournament
     {
         Scanner scanner;
         scanner = new Scanner(System.in);
-        System.out.println("Velkommen til bordfodboldturneringen, tast ja for at oprette dit hold");
+        System.out.println("Velkommen til bordfodboldturneringen, tast 1 for at oprette dit hold");
         String input;
         input = scanner.nextLine();
 
-        if (!input.equalsIgnoreCase("ja"))
+        if (!input.equalsIgnoreCase("1"))
         {
             return;
         }
