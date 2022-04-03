@@ -67,53 +67,56 @@ public class Tournament
         // TODO men den giver udfordringer på input siden
 
         button1.addActionListener(e ->
-        {
-            try
-            {
-                button1Pressed();
-            }
-            catch (IOException ex)
-            {
-                ex.printStackTrace();
-            }
-        });
+                {
+                    try
+                    {
+                        button1Pressed();
+                    }
+                    catch (IOException ex)
+                    {
+                        ex.printStackTrace();
+                    }
+                }
+        );
 
         button2.addActionListener(e ->
-        {
-            try
-            {
-                button2Pressed();
-            }
-            catch (IOException ex)
-            {
-                ex.printStackTrace();
-            }
-        });
+                {
+                    try
+                    {
+                        button2Pressed();
+                    }
+                    catch (IOException ex)
+                    {
+                        ex.printStackTrace();
+                    }
+                }
+        );
 
         button3.addActionListener(e ->
-        {
-            try
-            {
-                button3Pressed();
-            }
-            catch (IOException ex)
-            {
-                ex.printStackTrace();
-            }
-        });
+                {
+                    try
+                    {
+                        button3Pressed();
+                    }
+                    catch (IOException ex)
+                    {
+                        ex.printStackTrace();
+                    }
+                }
+        );
 
         button4.addActionListener(e ->
-        {
-            try
-            {
-                button4Pressed();
-            }
-            catch (IOException ex)
-            {
-                ex.printStackTrace();
-            }
-        });
-
+                {
+                    try
+                    {
+                        button4Pressed();
+                    }
+                    catch (IOException ex)
+                    {
+                        ex.printStackTrace();
+                    }
+                }
+        );
     }
 
     public static void button1Pressed() throws IOException
@@ -122,21 +125,6 @@ public class Tournament
         JOptionPane.showMessageDialog(null, "Her skal turneringslederen " +
                 "have mulighed for at oprette en ny turnering", "", 1);
     }
-
-    public static void button3Pressed() throws IOException
-    {
-        // TODO Når der trykkes på et hold, skal spillernavnene komme op
-        String[] score;
-        score = new String[]{"Hold 1", "Hold 2", "Hold 3", "Hold 4", "Hold 5", "Hold 6", "Hold 7", "Hold 8"};
-        int result1;
-        result1 = JOptionPane.showOptionDialog(null, "Tryk for at se holdets spillere + score:",
-                "Tilmeldte hold",
-                JOptionPane.OK_CANCEL_OPTION,
-                JOptionPane.QUESTION_MESSAGE,
-                null, score, score[0]);
-            JOptionPane.showMessageDialog(null, "Her bør holdets spillere fra " +
-                    "data.txt filen vises", "", 1);
-        }
 
 
     public static void button2Pressed() throws IOException
@@ -160,6 +148,21 @@ public class Tournament
             out.write(name +"\n");
             out.close();
         }
+    }
+
+    public static void button3Pressed() throws IOException
+    {
+        // TODO Når der trykkes på et hold, skal spillernavnene komme op
+        String[] score;
+        score = new String[]{"Hold 1", "Hold 2", "Hold 3", "Hold 4", "Hold 5", "Hold 6", "Hold 7", "Hold 8"};
+        int result1;
+        result1 = JOptionPane.showOptionDialog(null, "Tryk for at se holdets spillere + score:",
+                "Tilmeldte hold",
+                JOptionPane.OK_CANCEL_OPTION,
+                JOptionPane.QUESTION_MESSAGE,
+                null, score, score[0]);
+        JOptionPane.showMessageDialog(null, "Her bør holdets spillere fra " +
+                "data.txt filen vises", "", 1);
     }
 
     public static void button4Pressed() throws IOException
