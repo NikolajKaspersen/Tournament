@@ -20,6 +20,7 @@ public class TextUI
         out = new FileWriter("src/com/company/data.txt", true);
         Scanner sc;
         sc = new Scanner(System.in);
+        String input;
         while (name.size() <= 4)
         {
             System.out.println("Indtast venligst navnene på spillerne:");

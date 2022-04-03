@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="25dd8915-aaff-42bf-b991-6561f67fff5d" name="Changes" comment="Cleanup i koden">
+    <list default="true" id="25dd8915-aaff-42bf-b991-6561f67fff5d" name="Changes" comment="Konsol koden">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tournament/com/company/Tournament.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tournament/com/company/Tournament.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Match.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Match.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Tournament.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Tournament.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/TextUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/TextUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/data.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/data.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -291,7 +288,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648987251853</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Konsol koden">
+      <created>1649008257111</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1649008257111</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -314,6 +318,7 @@
     <MESSAGE value="TODO" />
     <MESSAGE value="Ændringer i JFrame" />
     <MESSAGE value="Cleanup i koden" />
-    <option name="LAST_COMMIT_MESSAGE" value="Cleanup i koden" />
+    <MESSAGE value="Konsol koden" />
+    <option name="LAST_COMMIT_MESSAGE" value="Konsol koden" />
   </component>
 </project>
