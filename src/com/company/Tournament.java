@@ -69,7 +69,7 @@ public class Tournament
         button1.addActionListener(e ->
                 {
                     JOptionPane.showMessageDialog(null, "Her skal turneringslederen " +
-                            "have mulighed for at oprette en ny turnering", "", 1);
+                            "have mulighed for at oprette en ny turnering", "", JOptionPane.INFORMATION_MESSAGE);
                 }
         );
 
@@ -102,12 +102,12 @@ public class Tournament
         button4.addActionListener(e ->
                 {
                     JOptionPane.showMessageDialog(null, "Her skal turneringslederen " +
-                            "have mulighed for at registrere kampresultater", "", 1);
+                            "have mulighed for at registrere kampresultater", "", JOptionPane.INFORMATION_MESSAGE);
                 }
         );
     }
 
-    public static void button1Pressed() throws IOException
+    public static void button1Pressed()
     {
         // TODO Oprettelse af ny turnering
     }
@@ -148,10 +148,10 @@ public class Tournament
                 JOptionPane.QUESTION_MESSAGE,
                 null, score, score[0]);
         JOptionPane.showMessageDialog(null, "Her bør holdets spillere fra " +
-                "data.txt filen vises", "", 1);
+                "data.txt filen vises", "", JOptionPane.INFORMATION_MESSAGE);
     }
 
-    public static void button4Pressed() throws IOException
+    public static void button4Pressed()
     {
         // TODO Registrering af kampresultater
     }
