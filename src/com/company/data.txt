@@ -1,8 +1,2 @@
 [Simon, Aleks, Pelle, Chris, Tobias]
 [John, Sigurd, Frede, Anne, Maria]
-null
-null
-null
-null
-null
-null
