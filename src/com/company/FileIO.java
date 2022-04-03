@@ -32,7 +32,7 @@ public class FileIO
         return null;
     }
 
-    public String readTournamentData()
+    public String[] readTournamentData()
     {
         File file = new File("src/com/company/tournamentData");
         String[] data = new String[8];
@@ -42,7 +42,7 @@ public class FileIO
             Scanner scan = new Scanner(file);
             int i = 0; //counter variabel
 
-            String header = scan.nextLine();//Ignorer header
+            String header = scan.nextLine();
 
             while (scan.hasNextLine())
             {

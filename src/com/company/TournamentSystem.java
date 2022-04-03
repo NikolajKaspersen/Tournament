@@ -7,7 +7,7 @@ public class TournamentSystem
     private FileIO fileIO= new FileIO();
 
     public TournamentSystem()
-    {
+    {/*
         runTournament();
     }
 
@@ -23,7 +23,7 @@ public class TournamentSystem
         }
         this.(data);
         String[] tournamentData = fileIO.readTournamentData();
-
+        */
     }
 
 }
