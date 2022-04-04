@@ -1,10 +1,7 @@
 package com.company;
 
-import javax.swing.*;
-import java.awt.*;
-import java.io.*;
+import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Tournament
