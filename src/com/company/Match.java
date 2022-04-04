@@ -9,17 +9,18 @@ public class Match
     public Match(int matchGoalScores)
     {
         this.matchGoalScores = matchGoalScores;
-
     }
 
     public String addTeam()
     {
         return null;
     }
+
     public int scheduleMatch()
     {
         return 0;
     }
+
     public void recordMatchResult()
     {
 

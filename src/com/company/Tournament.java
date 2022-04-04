@@ -1,5 +1,7 @@
 package com.company;
 
+import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Tournament
@@ -7,22 +9,21 @@ public class Tournament
     private String tournamentDescription;
     private int tournamentDateStart;
     private int tournamentDateEnd;
+    static ArrayList<String> name;
 
-    private TextUI textUI = new TextUI();
-
-    public void createTournament()
+    public static void createTournament() throws IOException
     {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Velkommen til fodboldturnering, tast ja for at spille");
-        String input = scanner.nextLine();
+        Scanner scanner;
+        scanner = new Scanner(System.in);
+        System.out.println("Velkommen til bordfodboldturneringen, tast 1 for at oprette dit hold");
+        String input;
+        input = scanner.nextLine();
 
-        if(!input.equalsIgnoreCase("ja")) {
-            System.exit(0);
+        if (!input.equalsIgnoreCase("1"))
+        {
+            return;
         }
-            //heheheheh//
-
-
-
-
+        TextUI.saveInput();
     }
+
 }
