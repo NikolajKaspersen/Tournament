@@ -1,19 +1,20 @@
 package com.company;
 
+import java.util.ArrayList;
+
 public class Match
 {
     private int matchGoalScores;
     private String nameOfTeam;
-    private String[] nameOfPlayer;
+    private ArrayList[Team] teams;
 
-    public Match(int matchGoalScores)
+    public void addTeam(Team team)
     {
-        this.matchGoalScores = matchGoalScores;
+        teams.add(team);
     }
 
-    public String addTeam()
-    {
-        return null;
+    public void setResult(int team1, int team2) {
+
     }
 
     public int scheduleMatch()
