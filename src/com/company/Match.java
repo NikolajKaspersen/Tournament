@@ -6,11 +6,11 @@ public class Match
 {
     private int matchGoalScores;
     private String nameOfTeam;
-    private ArrayList[Team] teams;
+    //private ArrayList[Team] teams;
 
     public void addTeam(Team team)
     {
-        teams.add(team);
+       // teams.add(team);
     }
 
     public void setResult(int team1, int team2) {
