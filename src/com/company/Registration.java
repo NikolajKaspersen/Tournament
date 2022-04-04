@@ -1,24 +1,39 @@
 package com.company;
 
-public class Registration {
-    String nameOfTeam;
-    String [] nameOfPlayers;
+public abstract class Registration {
+
     private String name;
-
-
-    public Registration(){
-        this.name = name;
-
-    }
-    public String getName(){
-        return name;
-    }
+    private String location;
+    private String statistics;
 
     @Override
-    public String toString(){
-        return name;
-
+    public boolean equals(Object o) {
+        return this.name.equals(((Registration)o).name);
     }
 
+
+    public String getName() {
+        return name;
+    }
+
+    public String getLocation() {
+        return location;
+    }
+
+    public String getStatistics() {
+        return statistics;
+    }
+
+    public void setLocation(String s) {
+        this.location = s;
+    }
+
+    public void setName(String s) {
+        this.name = s;
+    }
+
+    public void setStatistics(String s) {
+        this.statistics = s;
+    }
 
 }
